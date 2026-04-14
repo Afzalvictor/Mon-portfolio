@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Bertrand Victor</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Image/logo-AFZAL.png" class="logo" alt="Logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer and Operating System Specialist</p>
+                <h1>
+                    Hi, I am <span>Bertrand Victor</span><br />NANTENAINA from
+                    Madagascar
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Image/Photo posteur.png" alt="Bertrand Victor" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I am a passionate Computer Science student and System
+                        Administrator. I specialize in building robust web applications
+                        and securing complex network infrastructures. With a Master's
+                        focus in Computer Science, I bridge the gap between software
+                        development and system stability.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experiences')">
+                            Experiences
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web development</span><br />Web App Development</li>
+                            <li><span>App development</span><br />Building Android apps</li>
+                            <li>
+                                <span>Network administrator</span><br />Managing and securing
+                                networks
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li>
+                                <span>2024 - 2025</span><br />Technician of Scope with WFP
+                            </li>
+                            <li>
+                                <span>2023 - 2024</span><br />System and Network administrator
+                            </li>
+                            <li>
+                                <span>2022 - 2023</span><br />Server, Network security and
+                                Firewall
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2025 - Master II</span><br />Computer Science - ENI
+                                University
+                            </li>
+                            <li>
+                                <span>2024 - Bachelor</span><br />Computer Science - ENI
+                                University
+                            </li>
+                            <li>
+                                <span>2020 - Baccalaureat</span><br />Holy Spirit High School
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Building high-performance, scalable web applications tailored to
+                        your needs.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>
+                        Creating intuitive and responsive mobile experiences for modern
+                        users.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-network-wired"></i>
+                    <h2>Network Admin</h2>
+                    <p>
+                        Ensuring your infrastructure is secure, stable, and ready for
+                        growth.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Image/Web Development.png" alt="Project 1" />
+                    <div class="layer">
+                        <h3>Web Development</h3>
+                        <p>Project details and technological stack used.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Image/App Development.png" alt="Project 2" />
+                    <div class="layer">
+                        <h3>App Development</h3>
+                        <p>Mobile application built for high-demand environments.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Image/Network Administrator.png" alt="Project 3" />
+                    <div class="layer">
+                        <h3>Network Security</h3>
+                        <p>Security audit and infrastructure deployment.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>
+                        <i class="fas fa-paper-plane"></i>
+                        nantenainabertrandvictor@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone-square-alt"></i> +261 34 55 468 00</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="Image/My_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form id="contact-form">
+                        <input type="text" name="user_name" id="name" placeholder="Enter your name" required>
+                        <input type="email" name="user_email" id="email" placeholder="Enter your email" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Enter your message"
+                            required></textarea>
+                        <input type="hidden" name="date_sent" id="date_sent">
+                        <button type="submit" class="btn btn-submit" id="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="toast"></div>
+        <div class="copyright">
+            Copyright © Afzal Services. Made with <i class="fas fa-heart"></i> by
+            Bertrand Victor
+        </div>
+    </div>
+
+    <script>
+        // About Section Tabs
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Mobile Side Menu
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("x53ggS_CrpOqRg3-t");
+        })();
+
+        const btn = document.getElementById('submit-btn');
+        const form = document.getElementById('contact-form');
+        // On crée dynamiquement l'élément de succès
+        const successIcon = document.createElement('div');
+        successIcon.id = 'success-check';
+        successIcon.innerHTML = '✔ Message envoyé !';
+        btn.parentNode.appendChild(successIcon);
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            btn.disabled = true; // Empêche les clics multiples
+            btn.innerText = 'Sending...';
+
+            // --- AJOUT DE LA DATE ---
+            const now = new Date();
+            // Formatage : DD/MM/YYYY à HH:mm
+            const dateString = now.toLocaleDateString('fr-FR') + " à " + now.toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
+
+            // On prépare les paramètres à envoyer à EmailJS
+            // Note : assurez-vous que les noms correspondent aux variables dans votre template EmailJS
+            const templateParams = {
+                user_name: document.getElementById('name').value,
+                user_email: document.getElementById('email').value,
+                message: document.getElementById('message').value,
+                date_sent: dateString // C'est cette variable qu'on ajoute
+            };
+
+            emailjs.sendForm('service_m7srnti', 'template_3fg1jcw', this)
+                .then(() => {
+                    // 1. Cacher le bouton
+                    btn.style.display = 'block';
+
+                    // 2. Afficher l'icône de succès
+                    successIcon.style.display = 'block';
+
+                    // 3. Optionnel : Réinitialiser après 3 secondes
+                    setTimeout(() => {
+                        form.reset();
+                        successIcon.style.display = 'none';
+                        btn.style.display = 'block';
+                        btn.innerText = 'Submit';
+                        btn.disabled = false;
+                    }, 3000);
+
+                }, (err) => {
+                    btn.disabled = false;
+                    btn.innerText = 'Submit';
+                    alert("Erreur : " + JSON.stringify(err));
+                });
+        });
+    </script>
+
+</body>
+
+</html>
